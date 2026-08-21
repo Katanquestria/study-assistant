@@ -1,0 +1,32 @@
+# Carried over from the existing venv for compatibility
+langchain==1.3.14
+langchain-anthropic==1.4.8
+langchain-core==1.5.0
+anthropic==0.117.0
+
+# Local embeddings
+langchain-huggingface==1.2.2
+sentence-transformers==5.7.0
+
+# Vector store
+langchain-chroma==1.1.0
+chromadb==1.5.9
+
+# Text splitting (separate package in current LangChain versions)
+langchain-text-splitters==1.1.2
+
+# PDF ingestion
+pypdf==6.16.1
+
+# OCR (scanned pages) — also needs the Tesseract binary + `deu` language pack at OS level
+pytesseract==0.3.13
+pdf2image==1.17.0
+
+# Word ingestion
+python-docx==1.2.0
+
+# UI (added at milestone 5)
+streamlit==1.61.1
+
+# Utilities
+python-dotenv==1.2.3
