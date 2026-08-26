@@ -1,6 +1,6 @@
 # Study Assistant
 
-A RAG (Retrieval-Augmented Generation) chatbot that answers chemistry questions strictly from your own course notes ("Skript") — PDFs (typed or scanned), and Word documents, in German.
+A RAG (Retrieval-Augmented Generation) chatbot that answers chemistry questions strictly from your own course notes ("Skript"), PDFs (typed or scanned), and Word documents, in German.
 
 Built for Studienkolleg-style exam prep, where notes often lack problem sets and exams require full reasoning chains, not just final answers.
 
@@ -27,10 +27,12 @@ Scanned-page ingestion needs the Tesseract binary installed at the OS level (not
 
 ### 3. API key
 
-Copy `.env.example` to `.env` and add your Anthropic API key:
+Copy `.env.example` to `.env` and add your Anthropic API key and Langsmith API key:
 
 ```
 ANTHROPIC_API_KEY=your-api-key-here
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=your-api-key-here
 ```
 
 ## Running
