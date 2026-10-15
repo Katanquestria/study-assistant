@@ -1,6 +1,6 @@
 # Study Assistant
 
-A RAG (Retrieval-Augmented Generation) chatbot that answers chemistry questions strictly from your own course notes ("Skript"), PDFs (typed or scanned), and Word documents, in German.
+A RAG (Retrieval-Augmented Generation) chatbot that answers chemistry questions primarily from your own course notes with a web-search fallback ("Skript"), PDFs (typed or scanned), and Word documents, in German.
 
 Built for Studienkolleg-style exam prep, where notes often lack problem sets and exams require full reasoning chains, not just final answers.
 
@@ -60,4 +60,4 @@ study-assistant/
 
 **v1 complete** — multi-format ingestion (text PDF, scanned PDF via OCR, `.docx`), incremental embedding, Streamlit chat UI with citations, and a vector store that survives restarts.
 
-**v2 complete** — added web-search fallback for when there are no matching information in the ingested files.
+**v2 complete** — added web-search fallback for when the ingested files don't contain matching information.
