@@ -43,7 +43,7 @@ if question := st.chat_input("Ask AI"):
     st.session_state["chat_history"].append({"role": "user", "content": question})
 
     vectorstore = load_vectorstore()
-    results = query_vectorstore(vectorstore, question, k=3)
+    results = query_vectorstore(vectorstore, question, k=6)
     retrieved_docs = [doc for doc, score in results]
     answer = generate_answer(question, retrieved_docs, load_chat_model())
     
