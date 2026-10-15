@@ -60,4 +60,4 @@ study-assistant/
 
 **v1 complete** — multi-format ingestion (text PDF, scanned PDF via OCR, `.docx`), incremental embedding, Streamlit chat UI with citations, and a vector store that survives restarts.
 
-Planned next: a web-search fallback for topics notes don't cover well, and a problem-set generator that grades full reasoning chains rather than final answers.
+**v2 complete** — added web-search fallback for when there are no matching information in the ingested files.
